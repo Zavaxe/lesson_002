@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 # Есть словарь координат городов
 from pprint import pprint
 
@@ -35,7 +32,6 @@ distances ['Paris'] ['Moscow'] = moscow_paris
 distances ['Paris'] ['London'] = london_paris
 
 pprint(distances)
-
 
 
 
