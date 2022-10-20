@@ -49,7 +49,30 @@ print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, '�
 # WARNING для знающих циклы: БЕЗ циклов. Да, с переменными; да, неэффективно; да, копипаста.
 # Это задание на ручное вычисление - что бы потом понять как работают циклы и насколько с ними проще жить.
 
-# TODO здесь ваш код
+
+table_code = goods['Стол']
+table_item1 = store[table_code][0]
+table_item2 = store[table_code][1]
+table_sum_quantity = table_item1['quantity'] + table_item2['quantity']
+table_sum_coasts = (table_item1['quantity'] * table_item1['price']) + (table_item2['quantity'] * table_item2['price'])
+print('Стол -', table_sum_quantity, 'шт,', 'стоимость', table_sum_coasts, 'руб')
+
+sofa_code = goods['Диван']
+sofa_item1 = store[sofa_code][0]
+sofa_item2 = store[sofa_code][1]
+sofa_sum_quantity = sofa_item1['quantity'] + sofa_item2['quantity']
+sofa_sum_coasts = (sofa_item1['quantity'] * sofa_item1['price']) + (sofa_item2['quantity'] * sofa_item2['price'])
+print('Диван -', sofa_sum_quantity, 'шт,', 'стоимость', sofa_sum_coasts, 'руб')
+
+chair_code = goods['Стул']
+chair_item1 = store[chair_code][0]
+chair_item2 = store[chair_code][1]
+chair_item3 = store[chair_code][2]
+chair_sum_quantity = chair_item1['quantity'] + chair_item2['quantity'] + chair_item3['quantity']
+chair_sum_coasts = (chair_item1['quantity'] * chair_item1['price']) +\
+                   (chair_item2['quantity'] * chair_item2['price']) +\
+                   (chair_item3['quantity'] * chair_item3['price'])
+print('Стул -', chair_sum_quantity, 'шт,', 'стоимость', chair_sum_coasts, 'руб')
 
 ##########################################################################################
 # ВНИМАНИЕ! После того как __ВСЯ__ домашняя работа сделана и запушена на сервер,         #
